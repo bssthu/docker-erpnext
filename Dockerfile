@@ -3,7 +3,8 @@ FROM debian:wheezy
 MAINTAINER bssthu
 
 # Install Deps
-RUN apt-get update && \
+RUN echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list && \
+    apt-get update && \
     apt-get install -y sudo wget supervisor adduser && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
