@@ -2,6 +2,8 @@ FROM ubuntu:14.04
 
 MAINTAINER bssthu
 
+ENV BENCH_SERVICE_MANAGER supervisorctl
+
 COPY tools /opt/tools
 
 # Create user
