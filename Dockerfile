@@ -4,7 +4,7 @@ MAINTAINER bssthu
 
 # Install Deps
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends wget npm supervisor adduser && \
+    apt-get install -y --no-install-recommends wget supervisor adduser && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
