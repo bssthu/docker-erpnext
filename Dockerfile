@@ -4,7 +4,7 @@ MAINTAINER bssthu
 
 # Install Deps
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends sudo wget supervisor adduser && \
+    apt-get install -y sudo wget supervisor adduser && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
