@@ -3,6 +3,7 @@ FROM debian:wheezy
 
 ENV FRAPPE_USER frappe
 
+RUN apt-get update
 
 ENV ERPNEXT_APPS_JSON https://raw.githubusercontent.com/frappe/bench/master/install_scripts/erpnext-apps-master.json
 RUN useradd $FRAPPE_USER && mkdir /home/$FRAPPE_USER && chown -R $FRAPPE_USER.$FRAPPE_USER /home/$FRAPPE_USER
