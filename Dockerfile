@@ -5,7 +5,7 @@ MAINTAINER bssthu
 # Install Deps
 RUN echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list && \
     apt-get update && \
-    apt-get install -y sudo wget supervisor adduser && \
+    apt-get install -y sudo wget ca-certificates cron supervisor adduser && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
