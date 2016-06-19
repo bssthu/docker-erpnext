@@ -1,8 +1,6 @@
-FROM ubuntu:14.04
+FROM debian:wheezy
 
 MAINTAINER bssthu
-
-ENV BENCH_SERVICE_MANAGER supervisorctl
 
 COPY tools /opt/tools
 
